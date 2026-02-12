@@ -23,9 +23,9 @@ const greeting = {
   username: "N. Lahiri",
   title: "Hi, I'm N. Lahiri",
   subTitle: emoji(
-    "A Computer Science undergraduate focused on building practical full-stack applications using React, Python and modern web technologies. Passionate about solving real-world problems through clean and efficient code."
+    "Computer Science undergraduate specializing in backend development and AI-based systems. Experienced in building scalable APIs, intrusion detection platforms and NLP-driven applications."
   ),
-  resumeLink: "",
+  resumeLink: "/resume.pdf",
   displayGreeting: true
 };
 
@@ -40,54 +40,28 @@ const socialMediaLinks = {
 };
 
 // Skills Section
-
 const skillsSection = {
   title: "Technical Skills",
-  subTitle: "Technologies and tools I work with",
+  subTitle: "Backend development, AI systems and full-stack engineering",
   skills: [
-    emoji("⚡ Build responsive and interactive web applications using React"),
-    emoji("⚡ Develop backend logic and automation using Python"),
-    emoji("⚡ Implement clean UI using modern CSS and Tailwind"),
-    emoji("⚡ Work with data using NumPy and Pandas")
+    emoji("⚡ Design and build scalable RESTful APIs using Django REST Framework"),
+    emoji("⚡ Develop AI-driven applications using Python and NLP techniques"),
+    emoji("⚡ Implement anomaly detection and system-level security tools"),
+    emoji("⚡ Build full-stack applications with React and modern web technologies")
   ],
 
   softwareSkills: [
-    {
-      skillName: "HTML5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "CSS3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "React",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "Python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "Java",
-      fontAwesomeClassname: "fab fa-java"
-    },
-    {
-      skillName: "Git",
-      fontAwesomeClassname: "fab fa-git-alt"
-    },
-    {
-      skillName: "GitHub",
-      fontAwesomeClassname: "fab fa-github"
-    }
+    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
+    { skillName: "Django", fontAwesomeClassname: "fas fa-server" },
+    { skillName: "Java", fontAwesomeClassname: "fab fa-java" },
+    { skillName: "C++", fontAwesomeClassname: "fas fa-code" },
+    { skillName: "SQL", fontAwesomeClassname: "fas fa-database" },
+    { skillName: "React", fontAwesomeClassname: "fab fa-react" },
+    { skillName: "Git", fontAwesomeClassname: "fab fa-git-alt" },
+    { skillName: "GitHub", fontAwesomeClassname: "fab fa-github" }
   ],
   display: true
 };
-
 
 // Education Section
 
@@ -184,34 +158,59 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle: "Selected technical projects demonstrating backend systems, AI and full-stack development",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/nextuLogo.webp"), // temporary image
+      projectName: "Prompt to Course",
+      projectDesc:
+        "A prompt-driven edtech platform that converts natural language input into structured, topic-wise learning courses. Built scalable RESTful backend services using Django REST Framework and modular course decomposition logic.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "GitHub",
+          url: "https://github.com/Lahiri9100"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
       image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "SmartShield – AI Intrusion Detection System",
+      projectDesc:
+        "AI-based anomaly detection pipeline for identifying abnormal patterns in system and network logs. Integrated behavioral analysis and an interactive Streamlit dashboard for visualization.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "GitHub",
+          url: "https://github.com/Lahiri9100"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/nextuLogo.webp"),
+      projectName: "Gmail Manager AI Prototype",
+      projectDesc:
+        "AI-powered email management system implementing NLP pipelines to extract intent, deadlines and priority from unstructured email content. Designed as a privacy-focused prototype.",
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/Lahiri9100"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/nextuLogo.webp"),
+      projectName: "Virtual Mouse – Computer Vision",
+      projectDesc:
+        "Real-time hand gesture recognition system using OpenCV and MediaPipe. Translated detected hand landmarks into precise cursor movements for touch-free human-computer interaction.",
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/Lahiri9100"
         }
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Achievement Section
@@ -343,9 +342,9 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "I am open to software engineering and AI internship opportunities. Feel free to reach out.",
+  number: "+91 9100672958", 
+  email_address: "lahiri9158@gmail.com"
 };
 
 // Twitter Section
