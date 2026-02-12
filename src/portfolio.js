@@ -92,29 +92,32 @@ const skillsSection = {
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Gokaraju Lailavathi Engineering College",
+      logo: require("./assets/images/collegeLogo.png"),
+      subHeader: "Bachelor of Engineering – Computer Science Engineering",
+      duration: "Aug 2023 – Aug 2027",
+      desc: "GPA: 9.06 | Specializing in backend development and AI-based systems.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Relevant Coursework: Data Structures and Algorithms, Operating Systems, Database Management Systems, Computer Organization",
+        "Focused on scalable backend systems, REST APIs, and AI-driven applications"
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Sri Chaitanya Junior Kalasala",
+      logo: require("./assets/images/collegeLogo.png"),
+      subHeader: "MPC – Mathematics, Physics, Chemistry",
+      duration: "Mar 2021 – Mar 2023",
+      desc: "Percentage: 97.3%",
+      descBullets: [
+        "Strong foundation in Linear Algebra, Calculus, Probability and Statistics"
+      ]
     }
   ]
 };
+
 
 // Your top 3 proficient stacks/tech experience
 
