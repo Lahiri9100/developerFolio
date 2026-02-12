@@ -23,7 +23,7 @@ const greeting = {
   username: "N. Lahiri",
   title: "Hi, I'm N. Lahiri",
   subTitle: emoji(
-    "Computer Science undergraduate specializing in backend development and AI-based systems. Experienced in building scalable APIs, intrusion detection platforms and NLP-driven applications."
+    "Backend-focused Computer Science undergraduate with strong foundations in Data Structures, RESTful APIs and AI-based systems. Experienced in building scalable applications using Python, Django and modern web technologies."
   ),
   resumeLink: "/resume.pdf",
   displayGreeting: true
