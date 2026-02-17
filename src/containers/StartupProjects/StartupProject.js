@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, {useContext, useState} from "react";
 import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
@@ -43,14 +43,8 @@ export default function StartupProject() {
                       : "project-card project-card-light"
                   }
                 >
-                  {project.image ? (
-                    <div className="project-image">
-                      <img
-                        src={project.image}
-                        alt={project.projectName}
-                        className="card-image"
-                      ></img>
-                    </div>
+                  {project.images ? (
+                    <ImageCarousel images={project.images} />
                   ) : null}
                   <div className="project-detail">
                     <h5
@@ -90,5 +84,62 @@ export default function StartupProject() {
         </div>
       </div>
     </Fade>
+  );
+}
+function ImageCarousel({ images }) {
+  const [current, setCurrent] = useState(0);
+
+  const prevSlide = () => {
+    setCurrent(current === 0 ? images.length - 1 : current - 1);
+  };
+
+  const nextSlide = () => {
+    setCurrent(current === images.length - 1 ? 0 : current + 1);
+  };
+
+  return (
+    <div className="project-image" style={{ position: "relative" }}>
+      <img
+        src={images[current]}
+        alt="project screenshot"
+        className="card-image"
+      />
+
+      <button
+        onClick={prevSlide}
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "10px",
+          transform: "translateY(-50%)",
+          background: "rgba(0,0,0,0.5)",
+          color: "#fff",
+          border: "none",
+          padding: "5px 10px",
+          cursor: "pointer",
+          borderRadius: "5px"
+        }}
+      >
+        ‹
+      </button>
+
+      <button
+        onClick={nextSlide}
+        style={{
+          position: "absolute",
+          top: "50%",
+          right: "10px",
+          transform: "translateY(-50%)",
+          background: "rgba(0,0,0,0.5)",
+          color: "#fff",
+          border: "none",
+          padding: "5px 10px",
+          cursor: "pointer",
+          borderRadius: "5px"
+        }}
+      >
+        ›
+      </button>
+    </div>
   );
 }
