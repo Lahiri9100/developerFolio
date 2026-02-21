@@ -89,3 +89,74 @@
     text-align: center;
   }
 }
+/* Carousel Container */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+/* Smooth image */
+.carousel-image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  border-radius: 14px;
+}
+
+.carousel-image:hover {
+  transform: scale(1.03);
+}
+
+/* Navigation Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  padding: 6px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: background 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-btn.left {
+  left: 10px;
+}
+
+.carousel-btn.right {
+  right: 10px;
+}
+
+/* Dots */
+.carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-dot {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  margin: 0 4px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-dot.active {
+  background-color: #ffffff;
+  transform: scale(1.3);
+}
