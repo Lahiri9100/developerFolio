@@ -215,11 +215,13 @@ const bigProjects = {
     },
     {
       images: [
-        require("./assets/images/nextuLogo.webp")
+        require("./assets/images/virtual-mouse/1.png"),
+        require("./assets/images/virtual-mouse/2.png"),
+        require("./assets/images/virtual-mouse/3.png")
       ],
       projectName: "Virtual Mouse – Computer Vision",
       projectDesc:
-        "Real-time hand gesture recognition system using OpenCV and MediaPipe to control cursor movement via hand tracking.",
+        "Real-time hand gesture recognition system using OpenCV and MediaPipe to control cursor movement via hand tracking and landmark detection.",
       footerLink: [
         {
           name: "GitHub",
