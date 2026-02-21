@@ -62,9 +62,10 @@
 }
 
 .projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 35px;
   margin-top: 50px;
-  gap: 30px;
-  padding-bottom: 40px;
 }
 
 .project-card-footer span.project-tag {
