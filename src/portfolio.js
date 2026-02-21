@@ -159,79 +159,46 @@ const openSource = {
 
 const bigProjects = {
   title: "Projects",
-  subtitle: "Selected technical projects demonstrating backend systems, AI and full-stack development",
+  subtitle:
+    "Selected technical projects demonstrating backend systems, AI and full-stack development",
   projects: [
     {
-      {
-        images: [
-          require("./assets/images/prompt-to-course/1.png"),
-          require("./assets/images/prompt-to-course/2.png"),
-          require("./assets/images/prompt-to-course/3.png")
-        ],
-        projectName: "Prompt to Course",
-        projectDesc:
-          "A prompt-driven learning platform that converts natural language input into structured, topic-wise educational courses. Built using Django REST Framework with scalable backend architecture and modular course generation logic.",
-        footerLink: [
-          { name: "GitHub", url: "https://github.com/Lahiri9100/Prompt-to-Course" }
-        ]
-      }
+      image: require("./assets/images/prompt-to-course/1.png"),
       projectName: "Prompt to Course",
       projectDesc:
-        "A prompt-driven edtech platform that converts natural language input into structured, topic-wise learning courses. Built scalable RESTful backend services using Django REST Framework and modular course decomposition logic.",
+        "Prompt-driven learning platform that converts natural language input into structured, topic-wise educational courses using Django REST Framework and modular backend architecture.",
       footerLink: [
         {
           name: "GitHub",
-          url: "https://github.com/Lahiri9100"
+          url: "https://github.com/Lahiri9100/Prompt-to-Course"
         }
       ]
     },
     {
-      {
-        images: [
-          require("./assets/images/smartshield/1.png"),
-          require("./assets/images/smartshield/2.png"),
-          require("./assets/images/smartshield/3.png")
-        ],
-        projectName: "SmartShield – AI Intrusion Detection System",
-        projectDesc:
-          "An AI-based intrusion detection system that analyzes system and network logs to identify anomalous behavior. Features real-time visualization, anomaly scoring, and security insights using Python and Streamlit.",
-        footerLink: [
-          { name: "GitHub", url: "https://github.com/Lahiri9100/SmartShield" },
-          { name: "Live Demo", url: "https://smartshield-3ojrel6oshd4qjaa8yotzs.streamlit.app" }
-        ]
-      }
+      image: require("./assets/images/smartshield/1.png"),
       projectName: "SmartShield – AI Intrusion Detection System",
       projectDesc:
-        "AI-based anomaly detection pipeline for identifying abnormal patterns in system and network logs. Integrated behavioral analysis and an interactive Streamlit dashboard for visualization.",
+        "AI-based anomaly detection system analyzing system and network logs with real-time visualization and scoring using Python and Streamlit.",
       footerLink: [
         {
           name: "GitHub",
-          url: "https://github.com/Lahiri9100"
+          url: "https://github.com/Lahiri9100/SmartShield"
+        },
+        {
+          name: "Live Demo",
+          url: "https://smartshield-3ojrel6oshd4qjaa8yotzs.streamlit.app"
         }
       ]
     },
     {
-      {
-        images: [
-          require("./assets/images/gmail-manager/1.png"),
-          require("./assets/images/gmail-manager/2.png"),
-          require("./assets/images/gmail-manager/3.png")
-        ],
-        projectName: "Gmail Manager AI",
-        projectDesc:
-          "An AI-powered email management system that performs summarization, intent detection, deadline extraction, and calendar event generation using NLP techniques. Designed as a privacy-focused automation tool.",
-        footerLink: [
-          { name: "GitHub", url: "https://github.com/Lahiri9100/Gmail-Manager" },
-          { name: "Live Demo", url: "https://your-gmail-manager-link.streamlit.app" }
-        ]
-      }
-      projectName: "Gmail Manager AI Prototype",
+      image: require("./assets/images/gmail-manager/1.png"),
+      projectName: "Gmail Manager AI",
       projectDesc:
-        "AI-powered email management system implementing NLP pipelines to extract intent, deadlines and priority from unstructured email content. Designed as a privacy-focused prototype.",
+        "AI-powered email management system implementing NLP pipelines for summarization, intent detection and calendar extraction.",
       footerLink: [
         {
           name: "GitHub",
-          url: "https://github.com/Lahiri9100"
+          url: "https://github.com/Lahiri9100/Gmail-Manager"
         }
       ]
     },
@@ -239,7 +206,7 @@ const bigProjects = {
       image: require("./assets/images/nextuLogo.webp"),
       projectName: "Virtual Mouse – Computer Vision",
       projectDesc:
-        "Real-time hand gesture recognition system using OpenCV and MediaPipe. Translated detected hand landmarks into precise cursor movements for touch-free human-computer interaction.",
+        "Real-time hand gesture recognition system using OpenCV and MediaPipe to control cursor movement via hand tracking.",
       footerLink: [
         {
           name: "GitHub",
@@ -250,9 +217,6 @@ const bigProjects = {
   ],
   display: true
 };
-
-// Achievement Section
-// Include certificates, talks etc
 
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
