@@ -98,48 +98,37 @@ function ImageCarousel({ images }) {
   };
 
   return (
-    <div className="project-image" style={{ position: "relative" }}>
+    <div className="project-image carousel-container">
       <img
         src={images[current]}
         alt="project screenshot"
-        className="card-image"
+        className="card-image carousel-image"
       />
 
-      <button
-        onClick={prevSlide}
-        style={{
-          position: "absolute",
-          top: "50%",
-          left: "10px",
-          transform: "translateY(-50%)",
-          background: "rgba(0,0,0,0.5)",
-          color: "#fff",
-          border: "none",
-          padding: "5px 10px",
-          cursor: "pointer",
-          borderRadius: "5px"
-        }}
-      >
-        ‹
-      </button>
+      {images.length > 1 && (
+        <>
+          <button className="carousel-btn left" onClick={prevSlide}>
+            ‹
+          </button>
+          <button className="carousel-btn right" onClick={nextSlide}>
+            ›
+          </button>
 
-      <button
-        onClick={nextSlide}
-        style={{
-          position: "absolute",
-          top: "50%",
-          right: "10px",
-          transform: "translateY(-50%)",
-          background: "rgba(0,0,0,0.5)",
-          color: "#fff",
-          border: "none",
-          padding: "5px 10px",
-          cursor: "pointer",
-          borderRadius: "5px"
-        }}
-      >
-        ›
-      </button>
+          <div className="carousel-dots">
+            {images.map((_, index) => (
+              <span
+                key={index}
+                className={
+                  index === current
+                    ? "carousel-dot active"
+                    : "carousel-dot"
+                }
+                onClick={() => setCurrent(index)}
+              />
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 }
