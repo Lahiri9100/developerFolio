@@ -102,14 +102,6 @@ function ImageCarousel({ images }) {
     return () => clearInterval(interval);
   }, [images.length, paused]);
 
-  const prevSlide = () => {
-    setCurrent(current === 0 ? images.length - 1 : current - 1);
-  };
-
-  const nextSlide = () => {
-    setCurrent(current === images.length - 1 ? 0 : current + 1);
-  };
-
   return (
     <div
       className="project-image carousel-container"
@@ -124,13 +116,6 @@ function ImageCarousel({ images }) {
 
       {images.length > 1 && (
         <>
-          <button className="carousel-btn left" onClick={prevSlide}>
-            ‹
-          </button>
-          <button className="carousel-btn right" onClick={nextSlide}>
-            ›
-          </button>
-
           <div className="carousel-dots">
             {images.map((_, index) => (
               <span
