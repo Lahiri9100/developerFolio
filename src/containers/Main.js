@@ -52,7 +52,6 @@ const Main = () => {
           <>
             <Header />
             <Greeting />
-            <Projects />
             <StartupProject />
             <Skills />
             <StackProgress />
