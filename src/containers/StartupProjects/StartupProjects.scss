@@ -62,9 +62,15 @@
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 35px;
-  margin-top: 50px;
+  grid-template-columns: repeat(2, 1fr);  // FORCE 2 columns
+  gap: 40px;
+  margin-top: 60px;
+}
+
+@media (max-width: 900px) {
+  .projects-container {
+    grid-template-columns: 1fr;  // 1 column on mobile
+  }
 }
 
 .project-card-footer span.project-tag {
