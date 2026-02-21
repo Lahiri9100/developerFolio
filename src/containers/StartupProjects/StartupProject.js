@@ -97,7 +97,7 @@ function ImageCarousel({ images }) {
       setCurrent(prev =>
         prev === images.length - 1 ? 0 : prev + 1
       );
-    }, 3000); // 3 seconds
+    }, 2000); // 3 seconds
 
     return () => clearInterval(interval);
   }, [images.length, paused]);
