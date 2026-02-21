@@ -7,17 +7,17 @@
   border-radius: 10px;
 }
 .card-title {
-  color: $titleColor;
-  font-size: 22px;
-  line-height: 24px;
-  font-weight: 700;
-  margin: 15px 0 0 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
+
 .card-subtitle {
-  color: $cardSubtitle;
-  font-size: 17px;
-  line-height: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #666;
 }
+
 .project-card {
   border-radius: 18px;
   padding: 20px;
@@ -62,9 +62,8 @@
 }
 
 .projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+  margin-top: 40px;
+  gap: 30px;
 }
 
 .project-card-footer span.project-tag {
@@ -116,19 +115,19 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(255, 255, 255, 0.15);
   color: #fff;
-  border: none;
-  font-size: 22px;
-  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 18px;
+  padding: 6px 10px;
   border-radius: 50%;
   cursor: pointer;
-  backdrop-filter: blur(4px);
-  transition: background 0.3s ease;
+  backdrop-filter: blur(6px);
+  transition: all 0.2s ease;
 }
 
 .carousel-btn:hover {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .carousel-btn.left {
