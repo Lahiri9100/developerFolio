@@ -215,9 +215,9 @@ const bigProjects = {
     },
     {
       images: [
-        require("./assets/images/virtual-mouse/1.png"),
-        require("./assets/images/virtual-mouse/2.png"),
-        require("./assets/images/virtual-mouse/3.png")
+        require("./assets/images/virtual-mouse/1.jpg"),
+        require("./assets/images/virtual-mouse/2.jpg"),
+        require("./assets/images/virtual-mouse/3.jpg")
       ],
       projectName: "Virtual Mouse – Computer Vision",
       projectDesc:
