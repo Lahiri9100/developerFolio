@@ -81,7 +81,7 @@ const educationInfo = {
     },
     {
       schoolName: "Sri Chaitanya Junior Kalasala",
-      logo: require("./assets/images/collegeLogo.png"),
+      logo: require("./assets/images/srichaitanya.png"),
       subHeader: "MPC – Mathematics, Physics, Chemistry",
       duration: "Mar 2021 – Mar 2023",
       desc: "Percentage: 97.3%",
