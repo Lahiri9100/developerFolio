@@ -156,14 +156,17 @@ const openSource = {
 };
 
 // Some big projects you have worked on
-
 const bigProjects = {
   title: "Projects",
   subtitle:
     "Selected technical projects demonstrating backend systems, AI and full-stack development",
   projects: [
     {
-      image: require("./assets/images/prompt-to-course/1.png"),
+      images: [
+        require("./assets/images/prompt-to-course/1.png"),
+        require("./assets/images/prompt-to-course/2.png"),
+        require("./assets/images/prompt-to-course/3.png")
+      ],
       projectName: "Prompt to Course",
       projectDesc:
         "Prompt-driven learning platform that converts natural language input into structured, topic-wise educational courses using Django REST Framework and modular backend architecture.",
@@ -175,7 +178,11 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/smartshield/1.png"),
+      images: [
+        require("./assets/images/smartshield/1.png"),
+        require("./assets/images/smartshield/2.png"),
+        require("./assets/images/smartshield/3.png")
+      ],
       projectName: "SmartShield – AI Intrusion Detection System",
       projectDesc:
         "AI-based anomaly detection system analyzing system and network logs with real-time visualization and scoring using Python and Streamlit.",
@@ -191,7 +198,11 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/gmail-manager/1.png"),
+      images: [
+        require("./assets/images/gmail-manager/1.png"),
+        require("./assets/images/gmail-manager/2.png"),
+        require("./assets/images/gmail-manager/3.png")
+      ],
       projectName: "Gmail Manager AI",
       projectDesc:
         "AI-powered email management system implementing NLP pipelines for summarization, intent detection and calendar extraction.",
@@ -203,7 +214,9 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
+      images: [
+        require("./assets/images/nextuLogo.webp")
+      ],
       projectName: "Virtual Mouse – Computer Vision",
       projectDesc:
         "Real-time hand gesture recognition system using OpenCV and MediaPipe to control cursor movement via hand tracking.",
