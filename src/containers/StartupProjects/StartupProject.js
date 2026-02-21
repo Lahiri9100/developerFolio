@@ -1,4 +1,4 @@
-import React, {useContext, useState} from "react";
+import React, {useContext, useState, useEffect} from "react";
 import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
@@ -88,6 +88,19 @@ export default function StartupProject() {
 }
 function ImageCarousel({ images }) {
   const [current, setCurrent] = useState(0);
+  const [paused, setPaused] = useState(false);
+
+  useEffect(() => {
+    if (paused) return;
+
+    const interval = setInterval(() => {
+      setCurrent(prev =>
+        prev === images.length - 1 ? 0 : prev + 1
+      );
+    }, 3000); // 3 seconds
+
+    return () => clearInterval(interval);
+  }, [images.length, paused]);
 
   const prevSlide = () => {
     setCurrent(current === 0 ? images.length - 1 : current - 1);
@@ -98,11 +111,15 @@ function ImageCarousel({ images }) {
   };
 
   return (
-    <div className="project-image carousel-container">
+    <div
+      className="project-image carousel-container"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+    >
       <img
         src={images[current]}
         alt="project screenshot"
-        className="card-image carousel-image"
+        className="card-image carousel-image fade"
       />
 
       {images.length > 1 && (
