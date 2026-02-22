@@ -3,3 +3,4 @@ return (
     <p>© {new Date().getFullYear()} N. Lahiri</p>
   </footer>
 );
+
