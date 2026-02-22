@@ -36,7 +36,7 @@ const socialMediaLinks = {
   github: "https://github.com/Lahiri9100",
   linkedin: "https://www.linkedin.com/in/lahiri-nallapati-00b491322/",
   gmail: "lahiri9158@gmail.com",
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 // Skills Section
